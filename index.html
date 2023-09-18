@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Amazon</title>
+    <style>
+        *{
+            margin: 0;
+            font-family:Arial;
+            border: border-box;
+        }
+        .navbar{
+            height: 60px;
+            background-color: #0f1111;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo{
+            height:50px;
+            width: 100px;
+        }
+        .logo{
+            background-image:url("amazon_logo.png");
+            background-size: cover;
+            height: 50px;
+            width:100%;
+        }
+        .border{
+            border:1.5px solid transparent ;
+        }
+        .border:hover{
+            border:1.5px solid white;
+        }
+
+        /** box 2**/
+        .add-first{
+            color: #cccccc;
+            font-size: 0.85rem;
+            margin-left:15px;
+        }
+        .add-second{
+            font-size: 1rem;
+            margin-left: 3px;
+        }
+        .add-icon{
+            display: flex;
+            align-items: center;
+
+        }
+        /**box 3**/
+        .nav-search{
+            display: flex;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address border">
+                <p class="add-first"> Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>ALL</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
